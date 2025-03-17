@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<androidx.constraintlayout.widget.ConstraintLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    tools:context=".ScoreActivity"> 
+<TextView 
+        android:id="@+id/team1NameText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="64dp" 
+        android:layout_marginTop="168dp" 
+        android:paddingStart="16dp" 
+        android:paddingTop="16dp" 
+        android:text="Team 1" 
+        android:textSize="24sp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" /> 
+ 
+    <TextView 
+        android:id="@+id/team1ScoreText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="56dp" 
+        android:layout_marginTop="360dp" 
+        android:paddingStart="16dp" 
+        android:text="Score: 0" 
+        android:textSize="20sp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" /> 
+ 
+    <TextView 
+        android:id="@+id/team2NameText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="256dp" 
+        android:layout_marginTop="160dp" 
+        android:paddingStart="16dp" 
+        android:paddingTop="16dp" 
+        android:text="Team 2" 
+        android:textSize="24sp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" /> 
+ 
+    <TextView 
+        android:id="@+id/team2ScoreText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="260dp" 
+        android:layout_marginTop="360dp" 
+        android:paddingStart="16dp" 
+        android:text="Score: 0" 
+        android:textSize="20sp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" /> 
+ 
+    <Button 
+        android:id="@+id/team2AddPointButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="220dp" 
+        android:layout_marginTop="244dp" 
+        android:padding="16dp" 
+        android:text="Add 1 Point to Team 2" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" /> 
+ 
+    <Button 
+        android:id="@+id/team1AddPointButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="28dp" 
+        android:layout_marginTop="244dp" 
+        android:padding="16dp" 
+        android:text="Add 1 Point to Team 1" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" /> 
+ 
+    <Button 
+        android:id="@+id/resetButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="56dp" 
+        android:layout_marginTop="164dp" 
+        android:padding="16dp" 
+        android:text="Reset Scores" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toBottomOf="@id/team2AddPointButton" /> 
+ 
+    <Button 
+        android:id="@+id/viewResultButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="80dp" 
+        android:padding="16dp" 
+        android:text="View Result" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintHorizontal_bias="0.891" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toBottomOf="@+id/team2ScoreText" /> 
+ 
+</androidx.constraintlayout.widget.ConstraintLayout> 
